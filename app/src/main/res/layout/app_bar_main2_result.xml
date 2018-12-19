@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fab_anim"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.rabeech.runningpacecalculator.Main2Activity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include
+        android:id="@+id/include2"
+        layout="@layout/content_result" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_save_run"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="200dp"
+        android:layout_marginRight="16dp"
+        android:visibility="invisible"
+        app:elevation="6dp"
+        app:pressedTranslationZ="12dp"
+        app:srcCompat="@drawable/ic_fab_save" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_view_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="140dp"
+        android:layout_marginRight="16dp"
+        android:visibility="invisible"
+        android:onClick="fabLaunchSR"
+        app:elevation="6dp"
+        app:pressedTranslationZ="12dp"
+        app:srcCompat="@drawable/ic_fab_view_saved" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_cal_again"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="80dp"
+        android:layout_marginRight="16dp"
+        android:visibility="invisible"
+        android:onClick="fabLunchCal"
+        app:elevation="6dp"
+        app:pressedTranslationZ="12dp"
+        app:srcCompat="@drawable/ic_fab_cal_again" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:clickable="true"
+        app:elevation="6dp"
+        app:pressedTranslationZ="12dp"
+        app:srcCompat="@drawable/ic_fab_plus" />
+
+    <Button
+        android:id="@+id/btn_save_run"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="205dp"
+        android:layout_marginRight="54dp"
+        android:elevation="6dp"
+        android:text="@string/btn_save_this_run"
+        android:textAllCaps="false"
+        android:visibility="invisible"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        app:pressedTranslationZ="12dp" />
+
+    <Button
+        android:id="@+id/btn_view_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="145dp"
+        android:layout_marginRight="54dp"
+        android:elevation="6dp"
+        android:text="@string/btn_view_saved_runs"
+        android:textAllCaps="false"
+        android:visibility="invisible"
+        android:onClick="btnLunchSR"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        app:pressedTranslationZ="12dp" />
+
+    <Button
+        android:id="@+id/btn_cal_again"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="86dp"
+        android:layout_marginRight="52dp"
+        android:elevation="6dp"
+        android:text="@string/btn_calculate_another_run"
+        android:textAllCaps="false"
+        android:visibility="invisible"
+        android:onClick="btnLunchCal"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        app:pressedTranslationZ="12dp" />
+
+    <TextView
+        android:id="@+id/text_tease"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="36dp"
+        android:layout_marginRight="86dp"
+
+        android:text="Tap to explore options" />
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.rabeech.runningpacecalculator">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Main2Activity"
+            android:label="@string/title_activity_main2"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:parentActivityName=".Main2Activity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.rabeech.runningpacecalculator.Main2Activity" />
+        </activity>
+        <activity
+            android:name=".InputUserData"
+            android:label="@string/title_activity_input_user_data"
+            android:parentActivityName=".Main2Activity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.rabeech.runningpacecalculator.Main2Activity" />
+        </activity>
+        <activity
+            android:name=".ResultActivity"
+            android:label="@string/title_activity_result"
+            android:parentActivityName=".InputUserData"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.rabeech.runningpacecalculator.InputUserData" />
+        </activity>
+        <activity
+            android:name=".RunningResources"
+            android:label="@string/title_activity_running_resources"
+            android:parentActivityName=".Main2Activity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.rabeech.runningpacecalculator.Main2Activity" />
+        </activity>
+        <activity
+            android:name=".SavedRunsActivity"
+            android:label="@string/title_activity_saved_runs"
+            android:parentActivityName=".Main2Activity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.rabeech.runningpacecalculator.Main2Activity" />
+        </activity>
+        <activity
+            android:name=".ShareRunActivity"
+            android:label="@string/title_activity_share_run"
+            android:parentActivityName=".Main2Activity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.rabeech.runningpacecalculator.Main2Activity" />
+        </activity>
+        <activity
+            android:name=".DetailActivity"
+            android:label="Save Run Details"
+            android:parentActivityName=".Main2Activity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.rabeech.runningpacecalculator.Main2Activity" />
+        </activity>
+        <activity
+            android:name=".AboutActivity"
+            android:label="@string/title_activity_about"
+            android:parentActivityName=".Main2Activity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.rabeech.runningpacecalculator.Main2Activity" />
+        </activity>
+        <activity
+            android:name=".SplashActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "30943025363",
+    "firebase_url": "https://runningpacecalculator.firebaseio.com",
+    "project_id": "runningpacecalculator",
+    "storage_bucket": "runningpacecalculator.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:30943025363:android:547ede8cf63eb84b",
+        "android_client_info": {
+          "package_name": "com.rabeech.runningpacecalculator"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "30943025363-gkortfjc5oajfa1q75a3jqarq3fatphr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.rabeech.runningpacecalculator",
+            "certificate_hash": "62b53e6d86f76221cad9edab9e322e28296ddbd9"
+          }
+        },
+        {
+          "client_id": "30943025363-6n21u9ifvptu8bhcuv7nb7qajm8dch9f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD2At9wAWIZwSvmMegUa8C0fzc2FKtb79Y"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "30943025363-6n21u9ifvptu8bhcuv7nb7qajm8dch9f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
